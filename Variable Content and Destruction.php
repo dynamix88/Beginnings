@@ -1,34 +1,52 @@
 <?php
 /*
-When you are writing scripts, you will often need to see exactly what is inside your variables. For this PHP exercise, think of the ways you can do that, then write a script that outputs the following, using the echo statement only for line breaks.
+When you are writing scripts, you will often need to see exactly what is inside your variables. 
+For this PHP exercise, think of the ways you can do that, then write a script that outputs the following,
+using the echo statement only for line breaks.
 
 string(5) "Harry"
 Harry
 int(28)
 NULL
 */
+echo "Varianta 1";
+echo "<hr>";
+////////////////////////
+$nume="Harry";
+var_dump($nume);
+print_r ($nume);
 
-$value = 8;
-echo "Value is now $value";
-echo "</br>";
-$value+=2;
-echo "Add 2. Value is now $value";
-$value-=4;
-echo "</br>";
-echo "Substract 4. Value is now 6";
-$value*=5;
-echo "</br>";
-echo "Multiply by 5. Value is now $value";
-echo "</br>";
-$value/=3;
-echo "Divide by 3. Value is now $value";
-echo "</br>";
-$value++;
-echo "Increment value by one. Value is now $value";
-echo "</br>";
-$value--;
-echo "Decrement value by one. Value is now $value";
-echo "</br>";
+$var=28;
+var_dump($var);
+$var="";
+var_dump($var);
+$var=null;
+var_dump ($var);
+echo "<br>";
+echo "Varianta 2";
+echo "<hr>";
 
+///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
 
+$name='Harry'; 
+$age=28;   
+ 
+var_dump($name); 
+echo "<br/>";   
+ 
+print_r ($name); 
+echo "<br/>";   
+ 
+var_dump ($age); 
+echo "<br/>";  
+ 
+$name=null;
+//In PHP versions up to 5.3.3, this statement could also have 
+//been written: unset($name);, and the next command would work correctly. 
+//More recent versions return an undefined variable error 
+//for var_dump after the variable is unset.
+ 
+var_dump ($name);
+//The last two statements would have worked just as well with the $age variable.
 ?>
